@@ -1,0 +1,88 @@
+.TitleContainer {
+  width: 100%;
+  margin: 0px auto;
+}
+
+.Hello {
+  display: flex;
+}
+
+.TextContent h1 {
+  color: var(--primary-color);
+  font-size: 48px;
+  line-height: 50px;
+  margin: 0;
+}
+
+.TextContent span {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+.TextContent p {
+  width: 90%;
+}
+
+.InfoContent {
+  display: flex;
+}
+
+.SocialContent {
+  flex-basis: 40%;
+  width: 100%;
+}
+
+.SocialContent span {
+  cursor: pointer;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+.SocialContent span:nth-child(1) {
+  color: #007ebb;
+}
+
+.SocialContent span:nth-child(2) {
+  color: #3e75c3;
+}
+
+.DownloadContent {
+  flex-basis: 60%;
+  max-width: 150px;
+  position: relative;
+}
+
+.DownloadText {
+  width: 150px;
+  padding: 10px 0px;
+  background: var(--secondary-color);
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: var(--light-color);
+}
+
+.DownloadText:hover {
+  filter: brightness(80%);
+}
+
+.Arrow {
+  position: absolute;
+  top: -70px;
+  right: -215px;
+}
+
+@media all and (max-width: 1000px) {
+  .Arrow {
+    display: none;
+  }
+
+  .TitleContainer {
+    width: 80%;
+  }
+
+  .TextContent p {
+    width: 100%;
+  }
+}
